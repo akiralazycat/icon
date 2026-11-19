@@ -42,7 +42,7 @@ When the input is SVG, Glyph emits a sanitized/minified `icon.svg` and a separat
 ## Local development
 
 ```bash
-npm install
+npm install --no-package-lock
 npm run dev
 ```
 
@@ -50,9 +50,13 @@ Then open `http://localhost:3000`.
 
 ## Build
 
+Use Node.js 22 for the local build, which includes the TypeScript check.
+
 ```bash
 npm run build
 ```
+
+For export changes, open the studio, import a local sample SVG or PNG, and inspect the generated ZIP and its manifest. Check the platform previews associated with the changed output.
 
 ## Stack
 
